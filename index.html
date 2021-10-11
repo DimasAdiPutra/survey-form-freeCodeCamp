@@ -1,0 +1,118 @@
+<!-- ! Survey Form -->
+<!-- * Name -->
+<!-- * Email -->
+<!-- * Age (Optional) -->
+<!-- * Posisi Saat ini -->
+<!-- * Seberapa suka anda dengan menjadi seorang programmer -->
+<!-- * Apa pekerjaan yang anda inginkan saat menjadi seorang programmer -->
+<!-- * Bahasa Pemograman apa yang anda kuasai saat ini -->
+<!-- * harapan anda untuk kedepannya -->
+<!-- * submit -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programmer Survey Form</title>
+
+  <!-- style -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1 id="title">Programmer Survey Form</h1>
+      <p id="description">Thank you for taking your time to fill out this survey</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label class="label" for="name" id="name-label">Name</label>
+        <input class="form-control" type="text" id="name" placeholder="Enter Your Name" required>
+      </div>
+      <div class="form-group">
+        <label class="label" for="email" id="email-label">Email</label>
+        <input class="form-control" type="email" id="email" placeholder="Enter Your Email" required>
+      </div>
+      <div class="form-group">
+        <label class="label" for="number" id="number-label">Age <span class="clue">(Optional)</span></label>
+        <input class="form-control" type="number" id="number" placeholder="Enter Your Age" min="14" max="60">
+      </div>
+      <div class="form-group">
+        <label class="label" for="dropdown">What role best describes you right now?</label>
+        <select class="form-control" name="drowdown" id="dropdown">
+          <option disabled value selected>-- Choose One</option>
+          <option value="student">Student</option>
+          <option value="junior-developer">Junior Developer</option>
+          <option value="senior-developer">Senior Developer</option>
+          <option value="freelancer">Freelancer</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p class="label">How do you like being a programmer?</p>
+        <label for="not">
+          <input type="radio" name="like" id="not" value="not"> <span>Do not like</span>
+        </label>
+        <label for="normal">
+          <input type="radio" name="like" id="normal" value="normal" checked> <span>Normal</span>
+        </label>
+        <label for="like">
+          <input type="radio" name="like" id="like" value="like"> <span>Like</span>
+        </label>
+        <label for="really">
+          <input type="radio" name="like" id="really" value="really"> <span>Really like</span>
+        </label>
+      </div>
+      <div class="form-group">
+        <label class="label" for="dropdown">What Job do you want to do when you become a Programmer?</label>
+        <select class="form-control" name="drowdown" id="dropdown">
+          <option disabled value selected>-- Choose One</option>
+          <option value="front">FrontEnd Developer</option>
+          <option value="back">BackEnd Developer</option>
+          <option value="full">FullStack Developer</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p class="label">What programming languages are you proficient in now? <span class="clue">(You can choose
+            all)</span></p>
+        <label for="html">
+          <input type="checkbox" id="html" value="html"> <span>HTML</span>
+        </label>
+        <label for="css">
+          <input type="checkbox" id="css" value="css"> <span>CSS</span>
+        </label>
+        <label for="javascript">
+          <input type="checkbox" id="javascript" value="js"> <span>Javascript</span>
+        </label>
+        <label for="java">
+          <input type="checkbox" id="java" value="java"> <span>Java</span>
+        </label>
+        <label for="cpp">
+          <input type="checkbox" id="cpp" value="cpp"> <span>C++</span>
+        </label>
+        <label for="python">
+          <input type="checkbox" id="python" value="py"> <span>Python</span>
+        </label>
+      </div>
+      <div class="form-group">
+        <label class="label" for="comments">What are your hopes for the future?</label>
+        <textarea class="form-control" name="comments" id="comments" cols="30" rows="10"></textarea>
+      </div>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </main>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
